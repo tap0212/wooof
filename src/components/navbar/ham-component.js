@@ -15,7 +15,7 @@ const Ham = () => {
 						<li className="nav-element"><Link 
 						style={{color:"#66FCF1", textDecoration:"none", fontSize:"1em", fontWeight:"100", cursor:"pointer"}}
 						>
-						Account
+						Your Account
 						</Link></li>
 						<li className="nav-element"><Link 
 						style={{color:"#66FCF1", textDecoration:"none", fontSize:"1em", fontWeight:"100", cursor:"pointer"}}

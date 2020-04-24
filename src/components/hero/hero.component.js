@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     return (
         <div>
         <Navbar/>
-        <h1 className="dump">.</h1>
+
 
       <div className={classes.root}>
         <Grid container spacing={0}>

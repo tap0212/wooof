@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from './components/hero/hero.component'
 import Signup from './components/signUp/signIn.component'
-import Login from './components/logIn/login.component'
+import Login from './components/login/login.component'
 
 
 const Routes = () => {

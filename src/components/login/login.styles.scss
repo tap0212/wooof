@@ -1,0 +1,94 @@
+$black: #010103;
+$grey: #1F2833;
+$white:#C5C6C7;
+$bright:#66FCF1;
+$dull:#45A29E;
+
+.form-box{
+    height: 70vh;
+    width: 70ch;
+    border: 1px solid $dull;
+    position: absolute;
+    z-index: -3;
+  left: 50%;
+  top: 50%;
+  background-color: $black;
+  opacity: 0.8;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 25px rgba(102,252,241,0.3), 0 15px 12px rgba(102,252,241, 0.993);
+}
+
+
+h1{
+    color: $bright;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+h2{
+    color: $dull;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+.span{
+    color: $bright;
+    text-decoration: none;
+}
+
+
+form{
+    padding-top: 5%;
+}
+.input{
+    background-color: $grey;
+    border-radius: 7px;
+    border: 0px;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 2%;
+   
+}
+
+.input:focus {
+    outline: none !important;
+    border: 2.5px solid $bright;
+    box-shadow: 0 0 10px #719ECE;
+}
+.input::placeholder{
+    font-family: 'Work Sans', sans-serif;
+    color: $dull;
+    opacity: 0.8;
+    font-size: 1.2em;
+}
+
+.button{
+    font-size: 1.2em;
+    font-weight: 100;
+    color: $bright;
+    border-radius: 5px;
+    border: 1px solid $bright;
+    padding: 1.5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.button:hover, .button:active{
+    color: $black;
+    background-color:$bright;
+}
+
+@media screen and (max-width: 600px) {
+    .form-box{
+        height: 80vh;
+        width: 40ch;
+    }
+}

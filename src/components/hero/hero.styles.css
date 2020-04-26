@@ -5,20 +5,20 @@
   color: #010103;
 }
 .heroRight {
-  height: 60vh;
-  width: 90ch;
+  height: 58vh;
+  width: 80ch;
   border-radius: 10;
   box-sizing: border-box;
   overflow: hidden;
   margin-top: 10%;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 #heroLeft {
   background-color: #010103;
 }
 .heroRightColor {
   background-color: #66fcf1;
-  height: 100vh;
+  height: 90vh;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -60,6 +60,7 @@
 }
 .btn-container {
   padding-left: 12%;
+  padding-bottom: 5%;
 }
 .btn {
   font-size: 1.5em;
@@ -68,12 +69,13 @@
   border: 4px solid #45a29e;
   margin-left: 10px;
 }
-.btn:hover {
+.btn:hover,
+.btn:active {
   background-color: #45a29e;
   cursor: pointer;
 }
 .subtitle-container {
-  padding-top: 10%;
+  padding-top: 8.5%;
   text-align: center;
   bottom: 0;
 }
@@ -89,10 +91,14 @@
 }
 @media screen and (max-width: 600px) {
   .heroRight {
-    margin-left: 0%;
+    width: 90%;
+    margin-right: 20 px;
   }
   .hero-text {
     white-space: normal;
+  }
+  .quote-container {
+    padding-top: 2%;
   }
 }
 @media screen and (max-width: 992px) {

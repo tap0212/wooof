@@ -37,7 +37,7 @@ h2{
     padding-top: 3%;
 }
 
-span{
+.span{
     color: $bright;
 }
 
@@ -53,7 +53,9 @@ form{
     margin-left: 5%;
     margin-top: 5%;
     padding: 2%;
-   
+    color:$bright !important;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
 }
 
 .input:focus {
@@ -65,7 +67,7 @@ form{
     font-family: 'Work Sans', sans-serif;
     color: $dull;
     opacity: 0.8;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .button{
@@ -90,4 +92,8 @@ form{
         height: 80vh;
         width: 40ch;
     }
+}
+
+.flashError{
+    font-size: 1.5em;
 }

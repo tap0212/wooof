@@ -10,7 +10,7 @@ class SignUp extends React.Component {
 render(){
     return (
         <div className="container">
-        <Nav/>
+        <Nav className="nav"/>
        <div className="form-box">
            <h1>Create A New Account</h1>
             <form>

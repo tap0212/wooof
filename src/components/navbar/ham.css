@@ -90,12 +90,12 @@ menu-wrap{
 
 @media screen and (max-width: 600px) {
     .menu{
-		width: 45%;
-		height: 50%;
+		width: 300px;
+		height: 700px;
 	}
-
-	.menu > div > div > ul > li{
-		font-size: 1em;
+	.menu > div{
+		width: 400px;
+		height: 900;
 	}
   }
 

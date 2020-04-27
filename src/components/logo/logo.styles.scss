@@ -1,0 +1,29 @@
+.logo-container{
+    margin-left: 90%;
+    padding-top: 0%;
+
+}
+.logo{
+    font-family:  'Bangers', cursive;
+    color: #45A29E;
+    font-size: 4em;
+}
+
+
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo:hover, .logo:active{
+    color: #66FCF1;
+}
+
+
+@media screen and (max-width: 600px) {
+    .logo-container{
+        margin-left: 65%;
+    }
+    .logo{
+        font-size: 3em;
+    }
+}

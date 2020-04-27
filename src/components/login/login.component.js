@@ -37,7 +37,7 @@ const LogIn = () => {
         if(loading === true){
             return <PropagateLoader
             css={override}
-            size={25}
+            size={22}
             color={"#66FCF1"}
             loading={loading}
           />

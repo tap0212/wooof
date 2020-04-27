@@ -2,7 +2,7 @@ import React from "react"
 import { Link, withRouter ,Redirect} from "react-router-dom";
 import "./ham.css"
 import {isAutheticated,signout} from '../../auth/helper'
-
+import Logo from '../logo/logo.component'
 const currentTab = (history, path) => {
 	if (history.location.pathname === path) {
 	  return { color: "#2ecc72" };
@@ -16,6 +16,7 @@ const currentTab = (history, path) => {
 const Ham = ({history}) => {
 
     return (
+		<div>
         <div className="menu-wrap">
 		<input type="checkbox" className="toggler"/>
 		<div className="hamburger">
@@ -67,6 +68,9 @@ const Ham = ({history}) => {
 			</div>
 		</div>
         </div>
+
+						<Logo className="logo"/>
+		</div>
     )
 }
 

@@ -1,0 +1,64 @@
+.cat-head{
+    padding-top: 0;
+    text-align: center;
+    font-size: 3em;
+}
+
+.form-container{
+    height: 30vh;
+    text-align: center;
+}
+.form{
+    padding-bottom: 0;
+    padding-top: 5%;
+}
+.label{
+    color: #45A29E;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    padding-right: 5%;
+}
+
+.inputt{
+    font-size: 1.7em;
+    border:1px solid #66FCF1;
+    border-radius: 5px;
+    color: blanchedalmond;
+    margin-right: 5%;
+}
+
+.inputt:focus {
+    outline: none !important;
+    border: 2.5px solid #66FCF1;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.submitButton{
+    color: #45A29E;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    border: 1px solid #666666;
+
+    cursor: pointer;
+}
+
+.submitButton:hover, .submitButton:active{
+    background-color: #45A29E;
+    color: black;
+    cursor: pointer;
+}
+
+.back{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 19%;
+    padding: 1%;
+    font-size: 1.4em;
+    color: #45A29E;
+    border: 1px solid #66FCF1;
+}
+
+.back:hover, .back:active{
+    background-color: #45A29E;
+    color: black;
+}

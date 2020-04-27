@@ -1,5 +1,5 @@
 .logo-container {
-  margin-left: 90%;
+  margin-left: 82%;
   padding-top: 0%;
 }
 .logo {
@@ -17,9 +17,10 @@
 }
 @media screen and (max-width: 600px) {
   .logo-container {
-    margin-left: 65%;
+    margin-left: 57%;
   }
   .logo {
-    font-size: 3em;
+    font-size: 2em;
+    margin-top: 0;
   }
 }

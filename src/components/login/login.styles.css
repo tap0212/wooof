@@ -44,11 +44,6 @@ form {
   margin-top: 5%;
   padding: 2%;
 }
-.input:focus {
-  outline: none !important;
-  border: 2.5px solid #66fcf1;
-  box-shadow: 0 0 10px #719ece;
-}
 .input::placeholder {
   font-family: "Work Sans", sans-serif;
   color: #45a29e;

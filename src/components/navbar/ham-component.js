@@ -1,7 +1,20 @@
 import React from "react"
-import Link from '@material-ui/core/Link'
+import { Link, withRouter ,Redirect} from "react-router-dom";
 import "./ham.css"
-const Ham = () => {
+import {isAutheticated,signout} from '../../auth/helper'
+
+const currentTab = (history, path) => {
+	if (history.location.pathname === path) {
+	  return { color: "#2ecc72" };
+	} else {
+	  return { color: "#FFFFFF" };
+	}
+  };
+
+
+
+const Ham = ({history}) => {
+
     return (
         <div className="menu-wrap">
 		<input type="checkbox" className="toggler"/>
@@ -13,23 +26,42 @@ const Ham = () => {
 				<div>
 					<ul>
 						<li className="nav-element"><Link id="link"
-						style={{color:"#66FCF1", textDecoration:"none", fontSize:"1em", fontWeight:"100", cursor:"pointer" }}
+						style={currentTab(history, "/")}
+							to="/login"
 						>
 						Your Account
 						</Link></li>
-						<li className="nav-element"><Link 
-						style={{color:"#66FCF1", textDecoration:"none", fontSize:"1em", fontWeight:"100", cursor:"pointer"}}
+						<li className="nav-element"><Link id="link"
+						style={currentTab(history, "/shop")}
+						to='/shop'
 						>
 						Marketplace</Link></li>
-						<li className="nav-element"><Link 
-						style={{color:"#66FCF1", textDecoration:"none", fontSize:"1em", fontWeight:"100", cursor:"pointer"}}
+						<li className="nav-element"><Link  id="link"
+						style={currentTab(history, "/about")}
+						to='/about'
 						>
 						About Us</Link></li>
-						<li className="nav-element"><Link 
-						style={{color:"#66FCF1", textDecoration:"none", fontSize:"1em", fontWeight:"100", cursor:"pointer"}}
+						<li className="nav-element"><Link id="link"
+						style={currentTab(history, "/about")}
+						to='/about'
 						>
 						Contact
 						</Link></li>
+
+						{isAutheticated() && 
+							(
+								<li className="nav-element"><Link id="link"
+								onClick={() => {
+									signout(() => {
+										history.push("/login")
+									})
+								}}
+								>
+								Logout
+								</Link></li>
+							)
+						}
+						
 					</ul>
 				</div>
 			</div>
@@ -38,4 +70,4 @@ const Ham = () => {
     )
 }
 
-export default Ham;
+export default withRouter(Ham)

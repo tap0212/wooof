@@ -4,17 +4,25 @@ import {Link} from 'react-router-dom'
 import { Alert } from '@material-ui/lab';
 import './signin.styles.scss'
 import {signup} from '../../auth/helper'
+import { css } from "@emotion/core";
+import {PropagateLoader} from "react-spinners";
 
 const SignUp =  () =>  {
+
+    const override = css`
+     display: block;
+     margin-left:50%;
+    `;
 
     const [values,setValues] = useState({
         name: '',
         email: '',
         password: '',
         error: '',
+        loading:false,
         success:false
     });
-    const {name,email,password,error,success} = values;
+    const {name,email,password,error,loading,success} = values;
 
     const handleChange = name => event => {
         setValues({...values,error:false, [name]: event.target.value})
@@ -23,12 +31,12 @@ const SignUp =  () =>  {
 
     const onSubmit = event => {
         event.preventDefault()
-        setValues({...values, error: false})
+        setValues({...values, error: false,loading:true})
         signup({name, email, password})
             .then(data => {
                 if(data.error){
                     console.log("go")
-                    setValues({...values, error:data.error, success: false})
+                    setValues({...values, error:data.error,loading:false, success: false})
                 }
                 else{
                     setValues({
@@ -52,6 +60,14 @@ const SignUp =  () =>  {
         }
         if(success===true){
             return  <Alert variant="outlined"  severity="success"><span className="flash">Account Created <Link className="span" to="/login">Login Now</Link></span></Alert>
+        }
+        if(loading === true){
+            return <PropagateLoader
+            css={override}
+            size={25}
+            color={"#66FCF1"}
+            loading={loading}
+          />
         }
     }
     return (

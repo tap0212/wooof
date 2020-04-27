@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, withRouter ,Redirect} from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import "./ham.css"
 import {isAutheticated,signout} from '../../auth/helper'
 import Logo from '../logo/logo.component'
@@ -15,6 +15,25 @@ const currentTab = (history, path) => {
 
 const Ham = ({history}) => {
 
+	const myAccount = () => {
+		if(isAutheticated() && isAutheticated().user.role === 0){
+			return <li className="nav-element"><Link id="link"
+			style={currentTab(history, "/dashboard")}
+				to="/dashboard"
+			>
+			Your Account
+			</Link></li>
+		}
+		if(isAutheticated() && isAutheticated().user.role === 1){
+			return <li className="nav-element"><Link id="link"
+			style={currentTab(history, "/adashboard")}
+				to="/adashboard"
+			>
+			Your Account
+			</Link></li>
+		}
+	}
+
     return (
 		<div>
         <div className="menu-wrap">
@@ -26,12 +45,7 @@ const Ham = ({history}) => {
 			<div>
 				<div>
 					<ul>
-						<li className="nav-element"><Link id="link"
-						style={currentTab(history, "/")}
-							to="/login"
-						>
-						Your Account
-						</Link></li>
+						{myAccount()}
 						<li className="nav-element"><Link id="link"
 						style={currentTab(history, "/shop")}
 						to='/shop'

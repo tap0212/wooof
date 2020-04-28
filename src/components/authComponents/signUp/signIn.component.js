@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import Nav from '../navbar/Navbar.component'
+import Nav from '../../navbar/Navbar.component'
 import {Link} from 'react-router-dom'
 import { Alert } from '@material-ui/lab';
 import './signin.styles.scss'
-import {signup} from '../../auth/helper'
+import {signup} from '../../../auth/helper'
 import { css } from "@emotion/core";
 import {PropagateLoader} from "react-spinners";
 

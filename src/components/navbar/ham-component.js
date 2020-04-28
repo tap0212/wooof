@@ -26,8 +26,8 @@ const Ham = ({history}) => {
 		}
 		else{
 			return <li className="nav-element"><Link id="link"
-			style={currentTab(history, "/adashboard")}
-				to="/adashboard"
+			style={currentTab(history, "/login")}
+				to="/login"
 			>
 			Your Account
 			</Link></li>

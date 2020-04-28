@@ -1,15 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from './components/hero/hero.component'
-import Signup from './components/signUp/signIn.component'
-import Login from './components/login/login.component'
+import Signup from './components/authComponents/signUp/signIn.component'
+import Login from './components/authComponents/login/login.component'
 import PrivateRoute from './auth/helper/PrivateRoutes';
 import UD from './components/userDashboard/UD.component';
-import AddCategory from './components/admin/addCategory/addCategory';
 import Landing from './components/marketplace/landing.marketplace/landing.marketplace.component'
 import Item from './components/marketplace/item.component/item.component';
-import ManageCategories from './components/admin/manageCategories/managecategories.component';
-import AddProduct from './components/admin/addProduct/addProduct.component';
 const Routes = () => {
     return (
         <BrowserRouter>

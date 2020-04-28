@@ -1,3 +1,8 @@
+$black: #010103;
+$grey: #1F2833;
+$white:#C5C6C7;
+$bright:#66FCF1;
+$dull:#45A29E;
 .logo-container{
     margin-left: 82%;
     padding-top: 0%;
@@ -5,8 +10,12 @@
 }
 .logo{
     font-family:  'Bangers', cursive;
-    color: #45A29E;
+    color: $dull;
     font-size: 4em;
+}
+
+#f{
+    color:$bright ;
 }
 
 
@@ -15,7 +24,7 @@
     cursor: pointer;
 }
 .logo:hover, .logo:active{
-    color: #66FCF1;
+    color: $bright;
 }
 
 

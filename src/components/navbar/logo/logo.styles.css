@@ -7,6 +7,9 @@
   color: #45a29e;
   font-size: 4em;
 }
+#f {
+  color: #66fcf1;
+}
 .link {
   text-decoration: none;
   cursor: pointer;

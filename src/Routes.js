@@ -5,9 +5,11 @@ import Signup from './components/signUp/signIn.component'
 import Login from './components/login/login.component'
 import AdminRoute from './auth/helper/AdminRoutes'
 import PrivateRoute from './auth/helper/PrivateRoutes';
-import AD from './components/adminDashboard/AD.component';
+import AD from './components/admin/adminDashboard/AD.component';
 import UD from './components/userDashboard/UD.component';
 import AddCategory from './components/admin/addCategory';
+import Landing from './components/marketplace/landing.marketplace/landing.marketplace.component'
+import Item from './components/marketplace/item.component/item.component';
 const Routes = () => {
     return (
         <BrowserRouter>
@@ -18,6 +20,7 @@ const Routes = () => {
                 <PrivateRoute path="/dashboard" exact component={UD} />
                 <AdminRoute path="/adashboard" exact component={AD}/>
                 <AdminRoute path="/admin/create/category" exact component={AddCategory}/>
+                <Route path="/marketplace" exact component={Landing}/>
             </Switch>
         </BrowserRouter>
     )

@@ -1,8 +1,8 @@
 import React from "react"
 import { Link, withRouter } from "react-router-dom";
-import "./ham.css"
+import "./ham.scss"
 import {isAutheticated,signout} from '../../auth/helper'
-import Logo from '../logo/logo.component'
+import Logo from './logo/logo.component'
 const currentTab = (history, path) => {
 	if (history.location.pathname === path) {
 	  return { color: "#2ecc72" };
@@ -24,7 +24,15 @@ const Ham = ({history}) => {
 			Your Account
 			</Link></li>
 		}
-		if(isAutheticated() && isAutheticated().user.role === 1){
+		else if(isAutheticated() && isAutheticated().user.role === 1){
+			return <li className="nav-element"><Link id="link"
+			style={currentTab(history, "/adashboard")}
+				to="/adashboard"
+			>
+			Your Account
+			</Link></li>
+		}
+		else{
 			return <li className="nav-element"><Link id="link"
 			style={currentTab(history, "/adashboard")}
 				to="/adashboard"
@@ -48,7 +56,7 @@ const Ham = ({history}) => {
 						{myAccount()}
 						<li className="nav-element"><Link id="link"
 						style={currentTab(history, "/shop")}
-						to='/shop'
+						to='/marketplace'
 						>
 						Marketplace</Link></li>
 						<li className="nav-element"><Link  id="link"

@@ -1,6 +1,6 @@
 import React from 'react'
-import Nav from '../navbar/Navbar.component'
-import { isAutheticated } from '../../auth/helper'
+import Nav from '../../navbar/Navbar.component'
+import { isAutheticated } from '../../../auth/helper'
 import {Link} from 'react-router-dom'
 import Grid from '@material-ui/core/Grid';
 import './AD.styles.scss'

@@ -1,5 +1,19 @@
 #landingTitle {
   font-family: "Rock Salt", cursive;
   padding-top: 0;
+  margin-top: 0;
   font-size: 3em;
+  font-weight: 100;
+}
+.descContainer {
+  width: 60%;
+  margin-left: 5%;
+}
+.description {
+  color: #c5c6c7;
+  font-family: "Rock Salt", cursive;
+  text-align: left;
+  line-height: 120%;
+  font-weight: 600;
+  letter-spacing: 0.2em;
 }

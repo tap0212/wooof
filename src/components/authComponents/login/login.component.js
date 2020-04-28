@@ -65,11 +65,9 @@ const LogIn = () => {
 
     const performRedirect = () => {
         if(didRedirect){
-            if(user && user.role === 1){
-                return <Redirect to="/adashboard"></Redirect>
-            }else{
+            
                 return <Redirect to='/dashboard'></Redirect>
-            }
+            
         }
     }
 

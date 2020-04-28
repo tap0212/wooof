@@ -24,14 +24,6 @@ const Ham = ({history}) => {
 			Your Account
 			</Link></li>
 		}
-		else if(isAutheticated() && isAutheticated().user.role === 1){
-			return <li className="nav-element"><Link id="link"
-			style={currentTab(history, "/adashboard")}
-				to="/adashboard"
-			>
-			Your Account
-			</Link></li>
-		}
 		else{
 			return <li className="nav-element"><Link id="link"
 			style={currentTab(history, "/adashboard")}

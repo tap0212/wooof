@@ -23,9 +23,13 @@ $dull:#45A29E;
     line-height: 120%;
     font-weight: 600;
     letter-spacing: 0.2em;
-    
 }
 
+.root{
+  flex-grow: 1;
+  width: 80vw;
+  padding-top: 5%;
+}
 
 // font-family: 'Caveat Brush', cursive;
 // font-family: 'Rock Salt', cursive;

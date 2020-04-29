@@ -16,7 +16,7 @@ const currentTab = (history, path) => {
 const Ham = ({history}) => {
 
 	const myAccount = () => {
-		if(isAutheticated() && isAutheticated().user.role === 0){
+		if(isAutheticated() && isAutheticated().user.role === 1){
 			return <li className="nav-element"><Link id="link"
 			style={currentTab(history, "/dashboard")}
 				to="/dashboard"

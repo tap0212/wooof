@@ -3,3 +3,68 @@ $grey: #1F2833;
 $white:#C5C6C7;
 $bright:#66FCF1;
 $dull:#45A29E;
+
+
+img{
+    width: 100%;
+    -webkit-transition: width 1s;
+  transition: width 1s;
+}
+img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    width: 107%;
+    overflow: hidden;
+}
+
+.card{
+    width: 80%;
+    border-radius: 10px;
+    color: $white;
+    box-shadow: $bright;
+    border-radius: 15px;
+    border-radius: 37px;
+    background: linear-gradient(145deg, #010103, #010103);
+    box-shadow:  29px 29px 57px #010102, 
+                 -29px -29px 57px #010104;
+}
+@media screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+}
+.name{
+    margin-top: 0;
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.5em;
+    color: $dull;
+}
+.span-age, .span-location{
+    margin-top: 0;
+}
+.span-age{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.3em;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.span-location{
+    text-align: right;
+    padding-right: 2%;
+    font-family: 'Rock Salt', cursive;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: $dull;
+    overflow: hidden;
+
+}
+
+.heart{
+    font-size: 1.3em;
+    font-family: 'Rock Salt', cursive;
+    padding-left: 2%;
+    color: $bright;
+}

@@ -46,9 +46,9 @@ export default class Landing extends React.Component {
                 <div className="root">
                 <Grid container spacing={3}>
 
-               {this.state.ItemsList.map(ItemsList => {
+               {this.state.ItemsList.map((ItemsList, index) => {
                return (
-                    <Grid item xs={12} xl={3} md={4} sm={6}>
+                    <Grid key={index} item xs={12} xl={3} md={4} sm={6}>
                       <CardListItem ItemsList={ItemsList}/>
                     </Grid>
                )

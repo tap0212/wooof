@@ -3,6 +3,9 @@ $grey: #1F2833;
 $white:#C5C6C7;
 $bright:#66FCF1;
 $dull:#45A29E;
+*{
+    background-color: $black;
+}
 #landingTitle{
     font-family: 'Rock Salt', cursive;
     padding-top: 0;
@@ -29,6 +32,12 @@ $dull:#45A29E;
   flex-grow: 1;
   width: 80vw;
   padding-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    
+
+
 }
 
 // font-family: 'Caveat Brush', cursive;

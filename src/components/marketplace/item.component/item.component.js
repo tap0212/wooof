@@ -9,7 +9,7 @@ const CardListItem = ItemsList => {
         <div className="container">
         <h4 className="name"><b>{ItemsList.ItemsList.name}<span className="heart">♡</span></b></h4>
         <h3 className="span-age">Breed:  {ItemsList.ItemsList.breed}</h3>
-         <h3 className="span-age">Age:  {ItemsList.ItemsList.age}</h3>
+         <h3 className="span-age">Age:  {ItemsList.ItemsList.age} (M/Y)</h3>
          <h3 className="span-location">{ItemsList.ItemsList.location}</h3>
 
        </div>

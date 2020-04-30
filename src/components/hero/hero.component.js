@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
         <Animated animationIn="bounceInUp" animationOut="fadeOut" isVisible="true">
         <div className="subtitle-container">
           <h3 className="subtitle">
-          <Link to="marketplace" style={{ color: 'white', textDecoration: 'inherit'}}>Get Your Wooof Now</Link>
+          <Link to="marketplace" style={{ color: 'white', textDecoration: 'inherit'}}>Wag A Tail</Link>
           </h3>
         </div>
         </Animated>

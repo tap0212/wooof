@@ -6,8 +6,8 @@ import Login from './components/authComponents/login/login.component'
 import PrivateRoute from './auth/helper/PrivateRoutes';
 import UD from './components/userDashboard/UD.component';
 import Landing from './components/marketplace/landing.marketplace/landing.marketplace.component'
-import Item from './components/marketplace/item.component/item.component';
 import AdoptForm from './components/marketplace/adopt-form/adopt-form.component';
+import About from './components/about/about';
 
 const Routes = () => {
     return (
@@ -16,6 +16,7 @@ const Routes = () => {
                 <Route path="/" exact component={Home} />
                 <Route path="/signup" exact component={Signup} />
                 <Route path="/login" exact component={Login} />
+                <Route path="/about" exact component={About} />
                 <PrivateRoute path="/dashboard" exact component={UD} />
                 <PrivateRoute path="/adopt" exact component={AdoptForm} />
                 <Route path="/marketplace" exact component={Landing}/>

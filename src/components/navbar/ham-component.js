@@ -19,9 +19,9 @@ const Ham = ({history}) => {
 		if(isAutheticated() && isAutheticated().user.role === 1){
 			return <li className="nav-element"><Link id="link"
 			style={currentTab(history, "/dashboard")}
-				to="/dashboard"
+				to="/marketplace"
 			>
-			Your Account
+			Account
 			</Link></li>
 		}
 		else{
@@ -45,23 +45,24 @@ const Ham = ({history}) => {
 			<div>
 				<div>
 					<ul>
+					<li className="nav-element"><Link  id="link"
+						style={currentTab(history, "/")}
+						to='/'
+						>
+						Home</Link></li>
 						{myAccount()}
+						
 						<li className="nav-element"><Link id="link"
 						style={currentTab(history, "/shop")}
 						to='/marketplace'
 						>
-						Marketplace</Link></li>
+						Wooof</Link></li>
 						<li className="nav-element"><Link  id="link"
 						style={currentTab(history, "/about")}
 						to='/about'
 						>
-						About Us</Link></li>
-						<li className="nav-element"><Link id="link"
-						style={currentTab(history, "/about")}
-						to='/about'
-						>
-						Contact
-						</Link></li>
+						WhoWe?</Link></li>
+						
 
 						{isAutheticated() && 
 							(

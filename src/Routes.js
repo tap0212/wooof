@@ -7,6 +7,8 @@ import PrivateRoute from './auth/helper/PrivateRoutes';
 import UD from './components/userDashboard/UD.component';
 import Landing from './components/marketplace/landing.marketplace/landing.marketplace.component'
 import Item from './components/marketplace/item.component/item.component';
+import AdoptForm from './components/marketplace/adopt-form/adopt-form.component';
+
 const Routes = () => {
     return (
         <BrowserRouter>
@@ -15,6 +17,7 @@ const Routes = () => {
                 <Route path="/signup" exact component={Signup} />
                 <Route path="/login" exact component={Login} />
                 <PrivateRoute path="/dashboard" exact component={UD} />
+                <PrivateRoute path="/adopt" exact component={AdoptForm} />
                 <Route path="/marketplace" exact component={Landing}/>
             </Switch>
         </BrowserRouter>

@@ -22,18 +22,18 @@ export default class Landing extends React.Component {
         this.state = {
             ItemsList : null,
             mounted:false,
-            loading:false
+            loading:true
         };
       }
        Flash = () => {
-        
-        if(this.state.loading === false){
-            return <PropagateLoader
+        if(this.state.loading === true){
+            return (
+            <PropagateLoader
             css={override}
             size={22}
             color={"#66FCF1"}
             loading={this.state.loading}
-          />
+          />)
         }
     }
 
@@ -46,7 +46,7 @@ export default class Landing extends React.Component {
               return response.json();
             })
             .then((responseJson) => {
-                this.setState({ ItemsList : responseJson, mounted:true, loading:true })
+                this.setState({ ItemsList : responseJson, mounted:true, loading:false })
               })
             .catch(err => console.log(err));
     }
@@ -56,7 +56,7 @@ export default class Landing extends React.Component {
     return (
         <div>
             <Nav/>
-            {this.Flash()}
+            
             <h1 id="landingTitle">Choose One For You...</h1>
            <div className="descContainer">
            <p className="description">
@@ -66,7 +66,7 @@ export default class Landing extends React.Component {
             <p className="description">
             By adopting a dog through WOOF, you’ll be playing a vital part in ending the struggle of stray dogs all over the world. Sincerely, we want to thank you for choosing to rescue a dog who needs your help more than most. If you’re ready to find your perfect companion, start your search here or fill in an adoption form! Or read our adoption process overview, FAQs & success stories for more information.
             </p>
-            
+            {this.Flash()}
             {
                 this.state.mounted && 
                 <div className="root">

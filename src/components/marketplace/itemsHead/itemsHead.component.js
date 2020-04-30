@@ -19,7 +19,7 @@ const ItemsHead = (ItemsList) => {
                     <div id="popup-image-container">
                     <ImageHelper id="image" ItemsList={ItemsList.ItemsList}/>
                     <div className="form-link-container">
-                         <Link className="form-link"  to='/'>Give Him A Home</Link>
+                         <Link className="form-link"  to='/adopt'>Give Him A Home</Link>
                     </div>
                     </div>
                 </Grid>

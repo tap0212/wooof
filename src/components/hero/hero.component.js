@@ -1,7 +1,7 @@
 import React from 'react'
 import {makeStyles } from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
-import Link from '@material-ui/core//Link'
+import {Link} from 'react-router-dom'
 import Grid from '@material-ui/core/Grid'
 import {Animated} from "react-animated-css";
 import "./hero.styles.scss"
@@ -50,9 +50,7 @@ const useStyles = makeStyles((theme) => ({
         <Animated animationIn="bounceInUp" animationOut="fadeOut" isVisible="true">
         <div className="subtitle-container">
           <h3 className="subtitle">
-          <Link style={{ color: 'white', textDecoration: 'inherit'}}>BUY </Link> |
-          <Link style={{ color: 'white', textDecoration: 'inherit'}}> SELL </Link> |
-          <Link style={{ color: 'white', textDecoration: 'inherit'}}> ADOPT </Link>
+          <Link to="marketplace" style={{ color: 'white', textDecoration: 'inherit'}}>Get Your Wooof Now</Link>
           </h3>
         </div>
         </Animated>

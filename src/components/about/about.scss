@@ -34,3 +34,23 @@ $dull:#45A29E;
     background-color: $dull;
     z-index: 2;
 }
+
+
+.sImg, .bImg{
+    width: 100%;
+    -webkit-transition: width 1s;
+  transition: width 1s;
+}
+.sImg:hover, .bImg:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .sImg{
+        size: 30%;
+    }
+}
+

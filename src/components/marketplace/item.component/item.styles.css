@@ -1,9 +1,9 @@
-img {
+.imgg {
   width: 100%;
   -webkit-transition: width 1s;
   transition: width 1s;
 }
-img:hover {
+.imgg:hover {
   opacity: 0.7;
   cursor: pointer;
   width: 107%;

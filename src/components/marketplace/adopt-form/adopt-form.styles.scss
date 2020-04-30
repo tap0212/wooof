@@ -3,7 +3,7 @@ $grey: #1F2833;
 $white:#C5C6C7;
 $bright:#66FCF1;
 $dull:#45A29E;
-
+$pink:#ec407a;
 .head{
     text-align: center;
     margin-top: 6%;
@@ -11,7 +11,7 @@ $dull:#45A29E;
     font-size: 3em;
     font-family: 'Rock Salt', cursive;
     font-weight: 100;
-    color: $dull;
+    color: $pink;
     letter-spacing: 8px;
 }
 
@@ -25,7 +25,7 @@ $dull:#45A29E;
 
 .ps{
     text-align: center;
-    color: $white;
+    color: $pink;
 }
 
 .number-container{

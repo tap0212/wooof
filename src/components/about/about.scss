@@ -3,6 +3,7 @@ $grey: #1F2833;
 $white:#C5C6C7;
 $bright:#66FCF1;
 $dull:#45A29E;
+$pink:#ec407a;
 .root{
     flex: 1;
 }
@@ -12,7 +13,7 @@ $dull:#45A29E;
 }
 
 .text{
-    color: $white;
+    color: $dull;
     font-size: 1.2em;
     font-weight: 500;
     font-family: 'Work Sans', sans-serif;
@@ -26,6 +27,7 @@ $dull:#45A29E;
     font-size: 2em;
 }
 .h11, .h22{
+    color: $pink;
     font-family:  'Bangers', cursive;
     letter-spacing: 5px;
 }

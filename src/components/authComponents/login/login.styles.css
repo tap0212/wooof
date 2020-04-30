@@ -14,7 +14,7 @@
     0 15px 12px rgba(102, 252, 241, 0.993);
 }
 h1 {
-  color: #66fcf1;
+  color: #ec407a;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   padding-left: 5%;
@@ -29,8 +29,9 @@ h2 {
   padding-top: 3%;
 }
 .span {
-  color: #66fcf1;
+  color: #ec407a;
   text-decoration: none;
+  font-weight: 400;
 }
 form {
   padding-top: 5%;

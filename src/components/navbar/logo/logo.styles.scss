@@ -3,28 +3,31 @@ $grey: #1F2833;
 $white:#C5C6C7;
 $bright:#66FCF1;
 $dull:#45A29E;
+$pink:#ec407a;
 .logo-container{
-    margin-left: 82%;
+    margin-left: 88%;
     padding-top: 0%;
 
 }
 .logo{
     font-family:  'Bangers', cursive;
-    color: $dull;
-    font-size: 4em;
+    color:$pink;
+    font-size: 5em;
 }
 
 #f{
-    color:$bright ;
+    color:$dull ;
 }
-
+#f:hover{
+    color: $pink;
+}
 
 .link{
     text-decoration: none;
     cursor: pointer;
 }
 .logo:hover, .logo:active{
-    color: $bright;
+    color: $dull;
 }
 
 

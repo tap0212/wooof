@@ -3,7 +3,7 @@ $grey: #1F2833;
 $white:#C5C6C7;
 $bright:#66FCF1;
 $dull:#45A29E;
-
+$pink:#ec407a;
 .form-box{
     height: 70vh;
     width: 70ch;
@@ -21,7 +21,7 @@ $dull:#45A29E;
 
 
 h1{
-    color: $bright;
+    color: $pink;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     padding-left: 5%;
@@ -38,8 +38,9 @@ h2{
 }
 
 .span{
-    color: $bright;
+    color: $pink;
     text-decoration: none;
+    font-weight: 400;
 }
 
 

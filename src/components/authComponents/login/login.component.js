@@ -23,7 +23,6 @@ const LogIn = () => {
     })
     const {email, password, error, loading,didRedirect} = values;
 
-    const {user} = isAutheticated();
 
 
     const handleChange = name => event => {

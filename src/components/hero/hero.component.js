@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
                     </blockquote>
                 </div>
                 <div className="btn-container">
-                <Link className="btn" style={{ color: 'white', textDecoration: 'inherit'}}>Get Yours Now</Link>
+                <Link to="/marketplace" className="btn" style={{ color: 'white', textDecoration: 'inherit'}}>Get Yours Now</Link>
                 </div>
             </Paper>
           </Grid>

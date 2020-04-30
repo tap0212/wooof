@@ -1,0 +1,16 @@
+.container {
+  height: 60vh;
+}
+.head3 {
+  padding-top: 0;
+  text-align: center;
+}
+.l2h {
+  text-decoration: none;
+  font-size: 2em;
+  color: #66fcf1;
+  font-family: "Work Sans", sans-serif;
+}
+.l2h-container {
+  text-align: center;
+}

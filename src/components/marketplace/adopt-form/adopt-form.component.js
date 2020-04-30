@@ -18,9 +18,10 @@ const  AdoptForm = () =>  {
                 <div className="number-container">
                     <form>
                     <span> <WhatsApp className="icon" /></span>
-                    <input type="number"
+                    <input type="tel"
                     className="number"
-                    placeholder="+91 9451XXXXXX"
+                    pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                    placeholder="+91 9451-XXX-XXX"
                     required
                      />
                     

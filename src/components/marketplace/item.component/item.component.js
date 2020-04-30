@@ -5,7 +5,7 @@ const CardListItem = ItemsList => {
     return (
 
       <div className="card">
-      <ImageHelper className="imgg" ItemsList={ItemsList.ItemsList}/>
+      <ImageHelper id="imgg" ItemsList={ItemsList.ItemsList}/>
         <div className="container">
         <h4 className="name"><b>{ItemsList.ItemsList.name}<span className="heart">♡</span></b></h4>
         <h3 className="span-age">Breed:  {ItemsList.ItemsList.breed}</h3>

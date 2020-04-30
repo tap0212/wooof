@@ -62,11 +62,13 @@
   border: 2px solid #45a29e;
   color: #c5c6c7;
   font-size: 1.3em;
-  padding-top: 1%;
+  padding-top: 0.5%;
   height: 100%;
   cursor: pointer;
   margin-left: 1%;
   font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 1%;
 }
 .submit:active,
 .submit:hover {

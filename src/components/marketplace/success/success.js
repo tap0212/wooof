@@ -18,7 +18,7 @@ function Success() {
         <div>
             <Nav/>
             <div className="success">
-            <div className="container" ref={container}></div>
+            <div className="containerr" ref={container}></div>
             <h1 className="head3">Your Response Has Been Successfully Taken</h1>
            <div className="l2h-container">
            <Link className="l2h" to="/" >Go To Home</Link>

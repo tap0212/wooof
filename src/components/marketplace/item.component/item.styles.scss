@@ -5,12 +5,12 @@ $bright:#66FCF1;
 $dull:#45A29E;
 
 
-.imgg{
+#imgg{
     width: 100%;
     -webkit-transition: width 1s;
   transition: width 1s;
 }
-.imgg:hover{
+#imgg:hover{
     opacity: 0.7;
     cursor: pointer;
     width: 107%;

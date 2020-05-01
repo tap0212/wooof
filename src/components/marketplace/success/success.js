@@ -2,7 +2,6 @@ import React , {useEffect, useRef} from 'react'
 import lottie from 'lottie-web'
 import {Link} from 'react-router-dom'
 import './success.scss'
-import Nav from '../../navbar/Navbar.component'
 function Success() {
     const container = useRef(null)
     useEffect(() => {
@@ -16,7 +15,6 @@ function Success() {
     }, [])
     return (
         <div>
-            <Nav/>
             <div className="success">
             <div className="containerr" ref={container}></div>
             <h1 className="head3">Your Response Has Been Successfully Taken</h1>

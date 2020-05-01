@@ -65,7 +65,7 @@ const LogIn = () => {
     const performRedirect = () => {
         if(didRedirect){
             
-                return <Redirect to='/dashboard'></Redirect>
+                return <Redirect to='/marketplace'></Redirect>
             
         }
     }

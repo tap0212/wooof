@@ -19,17 +19,6 @@
   text-align: center;
   color: #ec407a;
 }
-.number-container {
-  text-align: center;
-  margin-left: 5%;
-  padding: 0;
-}
-.number {
-  font-size: 2em;
-  border: none;
-  background-color: #1f2833;
-  color: #c5c6c7;
-}
 @media screen and (max-width: 600px) {
   .number {
     font-size: 1.3em;
@@ -41,37 +30,24 @@
   .submit {
     margin-top: 4%;
   }
-}
-.number:focus {
-  border: 2px solid #66fcf1;
+  .form {
+    width: 25ch;
+    margin-left: 0%;
+    height: 30vh;
+  }
 }
 .ps {
   font-size: 1.2em;
   font-family: "Work Sans", sans-serif;
   color: #45a29e;
 }
-.link {
-  text-decoration: none;
-  cursor: pointer;
-  color: #66fcf1;
+.form {
+  border: none;
+  height: 30vh;
+  width: 50ch;
 }
-.icon {
-  color: #c5c6c7;
-}
-.submit {
-  border: 2px solid #45a29e;
-  color: #c5c6c7;
-  font-size: 1.3em;
-  padding-top: 0.5%;
-  height: 100%;
-  cursor: pointer;
-  margin-left: 1%;
-  font-weight: 600;
-  text-decoration: none;
-  padding-bottom: 1%;
-}
-.submit:active,
-.submit:hover {
-  background-color: #45a29e;
-  color: #010103;
+#form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -74,8 +74,8 @@ export default class Landing extends React.Component {
 
                {this.state.ItemsList.map((ItemsList, index) => {
                return (
-                    <Popup modal key={index} trigger={<Grid key={index} item xs={12} xl={3} md={4} sm={6}>
-                                               <CardListItem ItemsList={ItemsList}/>
+                    <Popup modal key={index} trigger={<Grid key={index} className="item" item xs={12} xl={3} md={4} sm={6}>
+                                               <CardListItem  ItemsList={ItemsList}/>
                                           </Grid>
                     }>
                       { <ItemsHead className="modal"   ItemsList={ItemsList} />}

@@ -25,3 +25,6 @@
   width: 80vw;
   padding-top: 5%;
 }
+.item {
+  cursor: pointer;
+}

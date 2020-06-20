@@ -30,6 +30,11 @@ $pink:#ec407a;
     color: $dull;
 }
 
+@media only screen and (min-width:600px) and (max-width:1600px){
+    .logo{
+      font-size: 3em;
+    }
+  }
 
 @media screen and (max-width: 600px) {
     .logo-container{

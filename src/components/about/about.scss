@@ -5,7 +5,9 @@ $bright:#45A29E;
 $dull:#45A29E;
 $pink:#ec407a;
 .root{
-    flex: 1;
+    text-align: center;
+    width: 50%;
+    margin-left: 25ch;
 }
 
 .rightGrid{
@@ -17,6 +19,7 @@ $pink:#ec407a;
     font-size: 1.2em;
     font-weight: 500;
     font-family: 'Work Sans', sans-serif;
+    text-align: left;
 }
 .h11{
     font-size: 2.6em;
@@ -38,21 +41,23 @@ $pink:#ec407a;
 }
 
 
-.sImg, .bImg{
+ .bImg{
     width: 100%;
     -webkit-transition: width 1s;
   transition: width 1s;
 }
-.sImg:hover, .bImg:hover{
-    opacity: 0.7;
+.bImg:hover{
     cursor: pointer;
-    width: 100%;
     overflow: hidden;
 }
 
 @media screen and (max-width: 600px) {
     .sImg{
         size: 30%;
+    }
+    .root{
+        width: 100%;
+        margin-left: 0;
     }
 }
 

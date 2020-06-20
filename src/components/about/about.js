@@ -7,8 +7,6 @@ function About() {
         <div>
             <Nav/>
             <div className="root">
-                <Grid container spacing={3}>
-                    <Grid className="leftGrid" item xs={12} sm={8}>
                         <img className="bImg"  src="https://wildatheartfoundation.org/wp-content/uploads/2019/09/Lz9RUt5v-e1569512389968-1600x952.jpeg" alt=""/>
                         <h1 className="h11">About Wooof Foundation</h1>
                         <p className="text">
@@ -51,40 +49,7 @@ function About() {
                         <p className="text">Wooof Foundation believe in dog. We believe that a dog can lift our mood, change our day, keep us active and transform a house into a home. They are our fierce protectors, guard us and perform heroic feats. They offer freely what humans can spend a lifetime learning, which is to love unconditionally. They save our lives in many ways.</p>
                         <img className="bImg"  src="https://wildatheartfoundation.org/wp-content/uploads/2019/11/lTwS7VWQ.jpeg" alt=""/>
                         <p className="text">This is why Wild at Heart Foundation wants to end the suffering of these amazing creatures. Through our international dog rescue and adoption work, we are working towards a day when every dog, no matter where in the world they come from, can live a life free from fear and pain.</p>
-                        <h2 className="h22">Help As Much As You Can Make A Tail Wag</h2>
-                    </Grid>
-                
-                    <Grid  item xs={12} sm={4}>
-                        <img className="sImg" src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-                        
-                        
-                        <img className="sImg" src="https://images.pexels.com/photos/850602/pexels-photo-850602.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-
-
-                        <img className="sImg" src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-                   
-                        <img className="sImg" src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-                    
-                        <img className="sImg" src="https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-
-
-                        <img className="sImg" src="https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-
-                        <img className="sImg" src="https://images.pexels.com/photos/434090/pexels-photo-434090.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-
-                        <img className="sImg" src="https://images.pexels.com/photos/69371/pexels-photo-69371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-
-                        <img className="sImg" src="https://images.pexels.com/photos/374898/pexels-photo-374898.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-
-                        <img className="sImg" src="https://images.pexels.com/photos/1390361/pexels-photo-1390361.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-                        <img className="sImg" src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-                        <img className="sImg" src="https://images.pexels.com/photos/850602/pexels-photo-850602.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-                        <img className="sImg" src="https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
-
-
-                      
-                    </Grid>
-                </Grid>
+                        <h2 className="h22">Help As Much As You Can Make A Tail Wag</h2>               
             </div>
 
         </div>

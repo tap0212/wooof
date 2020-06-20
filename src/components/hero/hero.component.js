@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
           <Grid item xs={12} sm={6}>
             <Paper className="heroRight">
                 <div className="heroRightColor">
-                    <img src={heroImg} alt=""/>
+                    <img className="dogimg" src={heroImg} alt=""/>
                 </div>
             </Paper>
           </Grid>  

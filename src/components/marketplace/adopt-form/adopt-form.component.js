@@ -29,7 +29,7 @@ const  AdoptForm = () =>  {
                    
              
                 <p className="ps">P.S We process this really fast <br/>
-                  By fast we mean really fast like <Link onFocus className="link" target="blank" to="https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird">SR-71 Blackbird</Link>
+                  By fast we mean really fast like <a onFocus className="link" target="blank" href="https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird">SR-71 Blackbird</a>
                 </p>
             </div>
         </div>
